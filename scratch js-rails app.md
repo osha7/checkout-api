@@ -9,6 +9,29 @@ cd
 --------create backend app / repo 1-------------------------------
 
 --------create frontend app / repo 2-------------------------------
+Make a new directory in your top-level project for your frontend and cd into it.
+mkdir walkthrough-frontend
+cd walkthrough-frontend
+Tip: you can open up a new tab in terminal with command + t if you'd like to have your rails server up and running in another tab.
+
+In the new folder, create a single HTML page for your application, and a folder to hold your JavaScript files.
+touch index.html
+touch index.css
+mkdir src
+touch src/index.js
+
+add some sample html to index.html
+open the file to make sure working:
+open index.html 
+
+To get the JavaScript part of the project up and running, link the JavaScript file to your HTML page with a <script> tag:
+add this to your html file inside the <html> tags at btm of code
+<script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
+
+add this to your index.js file and check browser console for the log:
+option - command - j
+console.log("testing...")
+
 --------create frontend app / repo 2-------------------------------
 
 --------create database-------------------------------
@@ -65,3 +88,14 @@ Push the changes in your local repository to GitHub.
 $ git push -u origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 --------Uploading to GitHub------------------------
+
+--------Fast JSON API------------------------
+https://learn.co/tracks/online-software-engineering-structured/front-end-web-programming/rails-as-an-api/using-the-fast-json-api-gem
+
+Setting up Fast JSON API
+To include Fast JSON API, add gem 'fast_jsonapi' to your Rails project's Gemfile and run bundle install.
+
+Once installed, you will gain access to a new generator, serializer.
+rails g serializer Item
+rails g serializer Cart
+--------Fast JSON API------------------------
