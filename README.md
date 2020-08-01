@@ -1,9 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Frontend GitHub Repo:
+https://github.com/osha7/checkout-frontend
 
-Things you may want to cover:
+Backend GitHub Repo:
+https://github.com/osha7/checkout-api
 
 * Ruby version
 
@@ -21,4 +22,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* DrawIO
+https://app.diagrams.net/#G1pMl4AGhUY3uUGSmV8mQZMB7Kq8wm9ZL5
+
+*
