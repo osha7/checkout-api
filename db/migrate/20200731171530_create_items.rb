@@ -4,10 +4,11 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string :name
       t.float :price
       t.string :description
-      t.string :img_src, default: "https://ibb.co/gwmktJy"
+      t.string :img_source, default: "https://ibb.co/gwmktJy"
       t.boolean :available, default: true
       t.integer :item_count, default: 1
       t.integer :cart_id
+      t.timestamps
     end
   end
 end

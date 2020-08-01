@@ -4,6 +4,7 @@ class CreateCart < ActiveRecord::Migration[6.0]
       t.integer :quantity, default: 0
       t.float :total, default: 0
       t.float :sales_tax, default: 8.4
+      t.timestamps
     end
   end
 end

@@ -19,16 +19,20 @@ ActiveRecord::Schema.define(version: 2020_08_01_144956) do
     t.integer "quantity", default: 0
     t.float "total", default: 0.0
     t.float "sales_tax", default: 8.4
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.float "price"
     t.string "description"
-    t.string "img_src", default: "https://ibb.co/gwmktJy"
+    t.string "img_source", default: "https://ibb.co/gwmktJy"
     t.boolean "available", default: true
     t.integer "item_count", default: 1
     t.integer "cart_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
