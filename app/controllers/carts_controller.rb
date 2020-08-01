@@ -10,4 +10,10 @@ class CartsController < ApplicationController
         render json: CartSerializer.new(cart).to_serialized_json
     end
 
+    def destroy
+        cart = Cart.find_by(id: params[:id])
+        cart.destroy
+        render json: CartSerializer.new(cart)
+    end
+
 end
