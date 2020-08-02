@@ -90,6 +90,7 @@ $ git push -u origin master
 --------Uploading to GitHub------------------------
 
 --------Fast JSON API------------------------
+----unless chose to code out serializers----
 https://learn.co/tracks/online-software-engineering-structured/front-end-web-programming/rails-as-an-api/using-the-fast-json-api-gem
 
 Setting up Fast JSON API
