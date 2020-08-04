@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
     end
 
     def show
-        item = Item.find_by(id: params)
+        item = Item.find_by(id: params[:id])
         render json: ItemSerializer.new(item).to_serialized_json
     end
 
