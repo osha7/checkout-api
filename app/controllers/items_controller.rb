@@ -15,6 +15,13 @@ class ItemsController < ApplicationController
         render json: ItemSerializer.new(item).to_serialized_json
     end
 
+    def update
+        byebug
+        # item = Item.find_by(id: params[:id])
+        # if item.cart_id == null
+        #     item.cart_id == 
+    end
+
 
     def destroy
         item = Item.find_by(id: params[:id])

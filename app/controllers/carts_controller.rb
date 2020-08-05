@@ -1,6 +1,6 @@
 class CartsController < ApplicationController
 
-    def index
+    def index 
         carts = Cart.all 
         render json: CartSerializer.new(carts).to_serialized_json
     end
