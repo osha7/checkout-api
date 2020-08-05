@@ -11,10 +11,12 @@ class CartsController < ApplicationController
     end
 
     def create_or_return_cart
+        # byebug
         if Cart.any?
             cart = Cart.last
         else
             cart = Cart.create(cart_params)
+            # cart = Cart.create
         end
         render json: CartSerializer.new(cart).to_serialized_json
     end
@@ -33,7 +35,8 @@ class CartsController < ApplicationController
     private
 
     def cart_params
-        params.require(:cart).permit(:quantity, :total, :sales_tax)
+        # params.require(:cart).permit(:quantity, :total, :sales_tax)
+        params.permit(:quantity, :total, :sales_tax)
     end
 
 end

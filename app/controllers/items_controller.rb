@@ -16,10 +16,16 @@ class ItemsController < ApplicationController
     end
 
     def update
-        byebug
-        # item = Item.find_by(id: params[:id])
-        # if item.cart_id == null
-        #     item.cart_id == 
+        # byebug
+        item = Item.find(params[:id])
+        item.cart_id = params[:item][:cart_id]
+        # if item.cart_id == nil
+        #     item.cart_id = params[:item][:cart_id]
+        # else
+        #     item.cart_id == nil
+        # end
+        item.save
+        render json: ItemSerializer.new(item).to_serialized_json
     end
 
 
