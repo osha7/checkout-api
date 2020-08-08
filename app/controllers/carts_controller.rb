@@ -18,6 +18,7 @@ class CartsController < ApplicationController
             cart = Cart.create(cart_params)
             # cart = Cart.create
         end
+        # byebug
         render json: CartSerializer.new(cart).to_serialized_json
     end
 
