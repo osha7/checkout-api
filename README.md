@@ -25,4 +25,7 @@ https://github.com/osha7/checkout-api
 * DrawIO
 https://app.diagrams.net/#G1pMl4AGhUY3uUGSmV8mQZMB7Kq8wm9ZL5
 
-*
+* Youtube
+https://www.youtube.com/watch?v=XCvosJsfCvU&t=1s
+
+
