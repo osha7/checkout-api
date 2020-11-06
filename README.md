@@ -39,3 +39,6 @@ https://www.youtube.com/watch?v=XCvosJsfCvU&t=1s
 * Medium Blog
 https://medium.com/@ogroetz/the-javascript-prototype-as-a-backpack-b114ba42b2c8
 
+
+
+https://devcenter.heroku.com/articles/getting-started-with-rails6
